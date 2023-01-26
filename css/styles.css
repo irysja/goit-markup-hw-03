@@ -55,7 +55,7 @@ main {
   flex: 1 1 auto;
 }
 .container {
-  width: 1284px;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -65,8 +65,8 @@ main {
 /*------Components ---------*/
 .commands-section {
   background: #f4f4fd;
-  /*padding-top: 232px;*/
-  padding-bottom: 240px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .commands {
   display: flex;
@@ -76,21 +76,32 @@ main {
 /*.commands-card:not(:nth-child(4n)) {
   margin-right: 24px;
 }*/
+.frame-mein {
+   border-top: 1px solid #e7e9fc;
+}
 .frame {
-  border: 1px solid #E7E9FC;
-
+  padding-top: 32px;
+  margin-bottom: 8px;
+  padding-bottom:32px;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom:1px solid #e7e9fc ;
 }
 .frames {
-  border: 1px solid #E7E9FC;
+  padding-top: 32px;
+  margin-bottom: 8px;
+  padding-bottom:32px;
+  border: 1px solid #e7e9fc;
   background: #ffffff;
 }
 .appendix {
-  flex-basis: calc((100%-48px)/3);
-
+  font-weight:var( --primary-font);
+  flex-basis: calc((100%-48px) / 3);
+  margin-bottom: 8px;
 }
 .heabers-commands {
-  padding-top: 32px;
-  font-weight: 500;
+  /*padding-top: 32px;*/
+  font-weight: var(--primary-font)
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
@@ -102,17 +113,36 @@ main {
   padding-bottom: 32px;
   align-items: center;
 }
-.subtitles{
+.subtitles {
+  padding-top: 8px;
   text-align: center;
 }
-.appendix-card:not(:nth-child(3n)) {
+/*.appendix-card:not(:nth-child(3n)) {
   margin-right: 24px;
 }
 .appendix-card:not(:nth-last-child(-n + 3)) {
   margin-bottom: 168px;
+}*/
+.card-set-appendix {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  /*gap: 8px; */
+  margin-left: -24px;
+  margin-top: -24px;
 }
+.card-set-appendix > .appendix-card-item {
+  /*display: flex;
+  flex-wrap: wrap;*/
+  /*flex-basis: calc(100% / 6 - 20px);*/
+  flex-basis: calc((100% - 120px) / 3);
+  margin-left: 24px;
+  margin-top: 32px;
+  /*gap:8px;*/
+}
+.
 .appendix {
-  padding-top: 32px;
   display: flex;
   flex-wrap: wrap;
   font-weight: 500;
@@ -151,6 +181,7 @@ main {
 .page-header-container {
   display: flex;
   align-items: center;
+  
 }
 .main-navigation {
   display: flex;
@@ -184,11 +215,13 @@ main {
   margin-left: auto;
 }
 .contact-phone-number.link {
+  margin-left: auto;
   margin-right: 40px;
   /*margin-left: 332px;*/
 }
 .contact-emil.link {
   margin-left: 40px;
+
   /*margin-right: 156px;*/
 }
 .div {
@@ -200,13 +233,28 @@ main {
 .contact-emil.link:focus {
   color: var(--color-navy);
 }
-.page-commands,
+.card-set-our-services>.card-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 24px;
+
+}
+.card-set-our-services {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  /*gap: 8px; */
+  margin-left: -24px;
+  margin-top: -24px;
+}
+./*page-commands,
 .page-subtitle,
 .our-services {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
+  flex-basis: calc((100%/4)-24px);
+  gap:8px;
+
+}*/
 /*.page-commands,
 .page-subtitle-card:not(:nth-child(3n)){
   margin-right:24px ;
@@ -214,19 +262,20 @@ main {
 .appendix-card:not(:nth-last-child(-n + 3)) {
   margin-bottom: 120px;
 }
+.services {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .subtitle {
-  padding-bottom: 8px;
-  padding-bottom: 32px;
-  width: 264px;
-  height: 72px;
+  /*padding-bottom: 32px;*/
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: left;
+  /*text-align: left;*/
   color: var(--secondary-color-dark-gray);
 }
 .subtitle-comands {
-  font-weight: 500;
+  font-weight: var(--primary-font);
   font-size: 20px;
   line-height: 1.2;
   text-align: left;
@@ -235,14 +284,17 @@ main {
 }
 
 .doing {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.doing-text {
   margin-bottom: 72px;
 }
-
 .main-text {
-  padding-top: 120px;
+  /*padding-top: 120px;
   padding-bottom: 72px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -255,7 +307,6 @@ main {
   margin-left: 636px;
 }*/
 .modal-btn {
-  border-radius: 4px;
   padding: 16px 32px;
   background: var(--primary-color-blue);
   font-size: 16px;
@@ -283,6 +334,8 @@ main {
 }
 
 .modal-btn-marketing {
+  border: 1px solid #E7E9FC;
+  border-radius: 4px;
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
@@ -292,14 +345,21 @@ main {
   background: var(--secondary-color-white);
   cursor: pointer;
 }
+.marketings {
+  /*padding-top: 108px;*/
+  padding-bottom:72px ;
 
+}
+.marketing-section {
+  padding-top: 108px;
+}
 .marketing {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  padding-top: 108px;
-  margin-bottom: 84px;
+  /*padding-top: 108px;*/
+  margin-bottom: 72px;
 }
 
 /*.btn-marketing {
@@ -314,52 +374,38 @@ main {
 
 /* ------ HERO ------ */
 .hero {
-  height: 600px;
+  /*height: 600px;*/
   text-align: center;
 }
 
 .hero-containe {
   background: var(--primary-color-dark-gray);
 }
-
-.hero-title {
-  font-size: 56px;
-  line-height: 1.08;
-  /*text-align: center;*/
-  letter-spacing: 0.02em;
-  color: var(--primary-color-white);
-  /*display: flex;*/
-  padding-top: 188px;
-  padding-bottom: 42px;
-  /*margin-left:473px;*/
+.hero-section {
+  align-items: center;
   margin-right: auto;
 }
-
-/*.hero-title {
-  display: flex;
-  padding-top: 188px;
-  padding-bottom: 42px;
-  margin-left:473px;
-  margin-right: auto;
-  
-}*/
+.hero-title {
+  padding-bottom: 45px;
+  font-size: 56px;
+  line-height: 1.08;
+  letter-spacing: 0.02em;
+  color: var(--primary-color-white);
+}
 /*---- Main content -----*/
 
 .our-services {
-  margin-top: 120px;
   align-items: center;
   color: var(--secondary-color-dark-gray);
 }
-/*.logo--studio-footer {
-  padding-top: 100px;
-  padding-bottom: 16px;
-}*/
 .footer {
-  height: 310px;
+  padding-top: 100px;
+  padding-bottom:100px ;
+  /*height: 310px;*/
   background: var(--primary-color-dark-gray);
 }
 .footer-2 {
-  margin-top:120px ;
+  margin-top: 120px;
   height: 310px;
   background: var(--primary-color-dark-gray);
 }
