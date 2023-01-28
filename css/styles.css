@@ -104,7 +104,7 @@ main {
 }
 .frames {
   padding-top: 32px;
-  margin-bottom: 8px;
+ /* margin-bottom: 8px;*/
   padding-bottom:32px;
   border: 1px solid #e7e9fc;
   background: #ffffff;
@@ -130,7 +130,7 @@ main {
   align-items: center;
 }
 .subtitles {
-  padding-top: 8px;
+  margin-top: 8px;
   text-align: center;
 }
 /*.appendix-card:not(:nth-child(3n)) {
@@ -144,20 +144,21 @@ main {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  gap: 8px; 
+  gap: 24px; 
   margin-left: -24px;
   margin-top: -24px;
 }
 .card-set-appendix > .appendix-card-item {
-  /*display: flex;
-  flex-wrap: wrap;*/
-  flex-basis: calc((100% / 3 )- 24px);
-  /*flex-basis: calc((100% - 120px) / 3);*/
-  margin-left: 24px;
+  flex-basis: calc((100% - 48px) / 3);
   margin-top: 32px;
+  /*margin-left: 24px;*/
   /*gap:8px;*/
 }
-
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .appendix {
   display: flex;
   flex-wrap: wrap;
@@ -179,9 +180,6 @@ main {
   letter-spacing: 0.03em;
   color: var(--primary-color-blue);
   text-transform: uppercase;
-}
-.logo-web-footer {
-  padding-top: 100px;
 }
 .logo-studio {
   color: var(--primary-color-dark-gray);
@@ -279,8 +277,8 @@ main {
   margin-bottom: 120px;
 }
 .services {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .subtitle {
   margin-top: 8px;
@@ -334,6 +332,8 @@ main {
   letter-spacing: 0.04em;
   color: var(--primary-color-white);
   cursor: pointer;
+  border-radius:4px;
+  border: none;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -411,8 +411,7 @@ main {
   margin-right: auto;
 }
 .hero-title {
-  padding-bottom: 48px;
-  
+  margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.08;
   letter-spacing: 0.02em;
@@ -431,12 +430,13 @@ main {
   background: var(--primary-color-dark-gray);
 }
 .footer-2 {
-  margin-top: 120px;
-  height: 310px;
+  padding-top: 100px;
+padding-bottom: 100px;
+  /*height: 310px;*/
   background: var(--primary-color-dark-gray);
 }
 .coment {
-  padding-top: 16px;
+  margin-top: 16px;
   width: 264px;
   font-size: 16px;
   line-height: 1.5;
